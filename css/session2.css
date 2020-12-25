@@ -1,0 +1,33 @@
+body{
+    background-color: #fafafa;
+    background-image: url("../images/pub.jpg");
+    background-repeat: no-repeat; /*repear, no-repeat, repeat-x, repeat-y*/
+    background-size: cover; /*cỡ ảnh nền, cover: bao phủ*/
+
+}
+h1{
+    color:rgba(150,50,250,0.2);
+    font-size: 50px;
+    line-height: 75px;
+}
+p {
+    color: #222222;
+    background-color: green;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left; /* căn lề*/
+    width: 800px; /*do rong doan van ban*/
+    text-transform: capitalize; /*viet hoa chu cai dau dong, uppercase, lowercase, capitalize*/
+    text-decoration: none; /*underline line-through overline none*/
+    /*font-family: Arial; !*font cho van ban*!*/
+    font-weight: normal; /*thin-100, light-300, normal 400, medium 500, semibold 600, bold 700, extrabold 800, black 900*/
+}
+
+
+img{
+    max-width: 1000px;
+
+
+
+
+}
