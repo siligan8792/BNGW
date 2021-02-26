@@ -50,3 +50,16 @@
     line-height: 30px;
     background-color: #ebedd7;
 }
+.menu-bottom{
+    background-color: #e1d3b4;
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+}
+.footer-right{
+    display: flex;
+    justify-content: center;
+}
+.footer-right a{
+    color: red;
+}
