@@ -1,0 +1,298 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* begin-menu */
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: white !important;
+}
+.nav-link
+{
+    display: inline-block;
+    padding: .5rem 1.5rem !important;
+}
+.navbar-brand
+{
+    font-size:25px;
+}
+.navbar-nav.menu-right
+{
+    margin-left: 15%;
+}
+.navbar-nav.menu-right .layer1
+{
+    position: relative;
+    padding: 8px 8px 8px 8px;
+    transition: 0.4s;
+}
+.navbar-nav.menu-right a.nav-link, .navbar-brand
+{
+    color: #0a70b2!important;
+    font-weight: bold;
+}
+.menu-product .layer2
+{
+
+    z-index: 1;
+    visibility: hidden;
+    opacity : 0;
+    position: absolute;
+    top : 200%;
+    left: 49%;
+    padding: 2% 3%;
+    display: inline-block;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 2%;
+}
+.navbar-nav.menu-right .menu-product:hover .layer2
+{
+    top : 90%;
+    visibility: visible ;
+    opacity: 1 ;
+}
+.navbar-nav.menu-right .menu-product .layer2  ul  li
+{
+    list-style: none;
+    padding: 2% 0;
+    transition : 0.4s;
+    width: 260px;
+}
+.navbar-nav.menu-right .menu-product .layer2  ul
+{
+    visibility: hidden
+}
+.navbar-nav.menu-right .menu-product:hover .layer2  ul
+{
+    visibility: visible
+}
+.navbar-nav.menu-right .menu-product .layer2 > ul > li:hover
+{
+    margin-left: 4%;
+
+}
+.navbar-nav.menu-right .menu-product:hover .layer2  ul li a
+{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    color : #0a70b2;
+}
+.nav-item.buy-ticket a.nav-link
+{
+    background: linear-gradient(#fd0001, #d50e0e);
+    color: #ffe93b !important;
+    border-radius: 8%;
+    padding: .5rem .5rem !important;
+    display: inline-block;
+}
+.nav-item.buy-ticket a.nav-link::before
+{
+    content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLklEQVR4AWJwL/ABVE7WaBUEQRCGM6Ap7g4hDitARMiJcAk5ACS4ux8Ah4wIWcHdm+rnb3uxoHZnpr+/psZ+FJ1qMWQqC2RouW7132FD3SJTJWiezmpj/2dgKK0MB6VYMM0UBu4zK+uAeqFzh8kw2Uq6MHCPDVlqPf5HIolZFy8MBAyh/4b/OM/sGJ8hQ8/5CfZJeSBDuYFW0T9w1BYlbChnUA/6h/g3QZM+4AlqxPidD95m7pvY1YlkaeVk1ZahNuhI1Q7TFuY8e8CXxBHrBcUS3jjA03TSEI12X9Bc2SCKiGTYb5DHGxJi0kmWnuoxsZUi1LvZLDS2uAd8JChajiT9ZNYqvr6AxT3gy+FyVIc/wW73IFMmkfCPV5kfDD8cX4ItCUsDIX66fDoSlvoCOfAemnymL9EAAAAASUVORK5CYII=);
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+/* end-menu */
+/* footer */
+.footer{
+    background-image: url(https://halongcomplex.sunworld.vn/wp-content/themes/halongcomplex/dist/images/bg-footer.png);
+    min-height: 40vh;
+}
+.inner-footer
+{
+    padding-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inner-footer li
+{
+    list-style: none;
+    padding-right: 2%;
+}
+.inner-footer li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer-three-icon
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-footer h1
+{
+    padding: 2% 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+.home-three-icon:nth-child(2)
+{
+    padding: 0 2%;
+}
+.home-three-icon a
+{
+    display: inline-block;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    color: #0fa3bb;
+    transition: 0.4s;
+}
+.home-three-icon:hover a
+{
+    background-color: #ffba00;
+    color: white;
+}
+.menu-footer h4 {
+    margin-top: 6%;
+    font-size: 15px;
+}
+
+/* About us */
+.News-header{
+    margin-top: 35px;
+    text-align: center;
+}
+.News-header h1{
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: #454545;
+    padding-top: 5px;
+}
+.News-header .breadcrumb{
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0.75rem 1rem;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+.News-header .breadcrumb .breadcrumb-item{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #454545;
+    text-transform: capitalize;
+}
+.News-header .breadcrumb .breadcrumb-item a{
+    color: #454545;
+    font-size: 1rem;
+}
+.News-header .breadcrumb .breadcrumb-item a:hover{
+    color: black;
+    text-decoration: none;
+}
+.News-header .breadcrumb .active::before{
+    content: ">";
+}
+/* begin-main */
+.main-top h3
+{
+    font-weight: bold;
+}
+.box-info
+{
+    padding: 3% 3%;
+    /*border-radius: 10px;*/
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box-news:hover .box-info
+{
+    background-color: #dcfaff;
+}
+.box-news .detail-content{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.news{
+    border: 1px solid #f3f5f7;
+    border-radius: 10px;
+    margin: 30px 10px;
+}
+/*.news:hover{*/
+/*    transform: scale(1.02);*/
+/*    transition: 0.5s;*/
+/*}*/
+
+.News-content{
+    background-color: #F3f5f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("https://halongcomplex.sunworld.vn/wp-content/themes/halongcomplex/dist/images/background.png");
+    background-size: cover;
+
+}
+.News-content .detail-content{
+    /*background-color: #f3f5f7;*/
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.img-fluid{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box-info a{
+    text-decoration: none;
+}
+.box-info-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #026fb5;
+    text-transform: none;
+}
+.box-info p{
+    padding-top: 10px;
+}
+
+
+.News-content section{
+    padding: 20px;
+    width: 100%;
+    margin: 40px auto;
+
+}
+.News-content section ul{
+    display: flex;
+    margin-bottom: 10px;
+}
+.News-content section ul li{
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.News-content section ul .active{
+    background: #208dcd;
+    color: #fff;
+}
+.news-product{
+    flex-wrap: wrap;
+}
+.news:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
