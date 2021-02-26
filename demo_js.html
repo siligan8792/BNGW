@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Js</title>
+</head>
+<body>
+    <script type="text/javascript" src="javascript/demo1.js"></script>
+    <script type="text/javascript">
+        var gt = tinhgiaithua(16);
+        console.log("giai thua 16! = "+gt);
+        var x;
+        x = 10;
+        x++;
+        x+=10;
+        console.log(x);
+        x="hello world";
+        console.log(x);
+        var y = 20;
+        var z = 15;
+        console.log(y+z);
+        console.log(x+y);
+        console.log(y+x);
+        console.log(y+z+x);
+        var t =18;
+        console.log("xin chao cac ban, toi nam nay" +t+ "tuoi");
+        if (t>=18){
+            console.log("chuc mung ban da truong thanh");
+        }else{
+            console.log("cam nguoi duoi 18 tuoi");
+        }
+        switch (t){
+            case 18:console.log("chuc mung ban da truong thanh"); break;
+            default:console.log("cam nguoi duoi 18 tuoi");
+        }
+        if (t>18){
+
+        }else if (t==18){
+
+        }else{
+
+        }
+        for (var i=0;i<15;i++){
+            console.log(i);
+        }
+        var arr=[];
+        arr[0]=1;
+        arr[1]=15;
+        arr[2]="xin chao";
+        arr[3]=[];
+        arr[3][0]=2;
+        arr[3][1]="xin chao";
+        var arr2 =[];
+        arr2.push(19); //cách 2: dùng push, chỉ dùng được cho mảng
+        arr2.push(5);
+        arr2.push("xin chao");
+        var arr3 = [];
+        for(var i=0;i<10;i++){
+            arr3[i]=i+15;
+            arr3.push(i+15); //cách 2
+        }
+        arr3.push(77);
+        inketqua(6,9);
+        var k = tinhtong(10,12);
+        console.log("tong: "+k);
+        //khai báo hàm
+        function tinhtong(a,b){
+            var c = a+b;
+            return c;
+        }
+        function inketqua(a,b){
+            console.log(a+b);
+        }
+        // alert("Cam tre em duoi 18 tuoi") hàm cảnh báo ko trả về giá trị
+        // confirm("Ban da du 18 tuoi chua"); // hàm xác nhận trả về true hoặc false
+        // prompt("Nhap ten nguoi dung"); //hàm trả về 1 chuỗi
+        // setTimeout(function (){ //3000ms xuất hiện 1 lần
+        //     alert("xin chao, xuat hien sau 3 giay");
+        // },3000); //sau 3000ms thi se xuat hien "xin chao"
+        // setInterval(function (){ //cứ sau 3000ms xuất hiện 1 lần
+        //     alert("xin chao, cứ sau 3s xuất hiện 1 lần")
+        // },3000);
+
+        // var c=0;
+        // var si=setInterval(function (){
+        //     c++;
+        //     alert("xin chao");
+        //     if (c>3){ //sau 3 lần xác nhận thì ko xuất hiện nữa
+        //         clearInterval(si);
+        //     }
+        // },3000);
+        // ví dụ về bất đồng bộ hóa
+        var kq=10;
+        //công việc 1
+        setTimeout(function (){
+            alert("SS1")
+            kq+=10;
+        },2000);
+        //cong viec 2
+        alert(kq)
+
+
+
+
+    </script>
+</body>
+</html>

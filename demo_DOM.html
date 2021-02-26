@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/demo_DOM.css">
+</head>
+<body>
+    <h1 id="heading">Xin chao</h1>
+    <ol id ="dsnguoiyeu"></ol>
+    <script type="text/javascript">
+        var  h = document.getElementById("heading");
+        var ds= document.getElementById("dsnguoiyeu");
+        // setInterval(function (){
+        //     if(h.innerText=="Xin chao")
+        //     h.innerText="Xin chao cac ban";
+        //     else
+        //         h.innerText= "Xin chao";
+        // },2000);
+
+        // setTimeout(function (){
+        //     h.innerHTML= "<p> Xin Chao Cac Ban</p>";
+        // },2000)
+        // var ds =[];                                                  xem code git
+       /* setInterval(function (){
+            var g=prompt("ten ban gai moi");
+            ol.innerHTML+="<li>"+g+"</li>";
+        },2000);*/
+        setTimeout(function (){
+            h.style.color = "orange";
+            h.style.fontSize="50px";
+        },1000);
+
+    </script>
+</body>
+</html>

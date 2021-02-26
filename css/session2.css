@@ -9,6 +9,7 @@ h1{
     color:rgba(150,50,250,0.2);
     font-size: 50px;
     line-height: 75px;
+    border: 10px solid green;
 }
 p {
     color: #222222;

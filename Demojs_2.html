@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ob = {
+            name: "hung",
+            age: 18,
+            address: "18 ton that thuyet, cau giay, ha noi",
+            danhsachnguoiyeu:[],
+            run: function (){
+                console.log(this.name+"dang chay ...");
+            }
+        }
+        ob.run();
+        console.log("Ten: "+ob.name);
+        ob.name = "Tung";
+        console.log("Ten: "+ob.name);
+        ob.danhsachnguoiyeu.push("Loan");
+        ob.danhsachnguoiyeu.push("Linh");
+        console.log(ob.danhsachnguoiyeu);
+        var ob2={
+            name: thanh,
+            age: 18,
+            address: "18 ttt, cau giay, ha noi",
+            run: function (){
+                console.log(this.name +"dang chay");
+            }
+        }
+        ob2.run();
+        ob2.name = "lan";
+
+    </script>
+
+</body>
+</html>

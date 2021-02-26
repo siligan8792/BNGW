@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="css/session5.css">
+
+</head>
+<body>
+    <form method="get" action ="#">
+        <input name="firstname" type="text" required placeholder="Điền Họ Vào Đây"/>
+        <input name="lastname" type="text" required placeholder="Điền Tên Vào Đây"/>
+        <input name="Email" type="Email" required placeholder="Email..."/>
+        <input name="pwd" type="password" required placeholder="Password"/>
+        <input name="birthday" type="date" placeholder="Ngày Sinh"/>
+        <input name="birthday" type="time" placeholder="Giờ Sinh"/>
+        <input name="birthday" type="Month" placeholder="Giờ Sinh"/>
+        <input name="birthday" type="week" placeholder="Giờ Sinh"/>
+        <input name="age" type="number" placeholder="Tuổi"/>
+        <input name="color" type="color" placeholder="Màu sắc yêu thích"/>
+        <label>
+        <input name="gender" checked type="radio" value="Nam"/>Nam
+        </label>
+        <label>
+        <input name="gender" type="radio" value="Nam"/>Nữ
+        </label>
+        <label>
+        <input name="confirm" checked type="checkbox"/> Xác Nhận Điều Khoản
+        </label>
+        <select name="city">
+            <option value="">Vui Lòng Chọn Tỉnh Thành Phố</option>
+            <option selected value="hn">Hà Nội</option>
+            <option value="dn">Đà Nẵng</option>
+            <option value="qn">Quảng Ninh</option>
+            <option value="tn">Thái Nguyên</option>
+            <option value="hcm">TP Hồ Chí Minh</option>
+        </select>
+        <textarea name="content" placeholder="Mô Tả Bản Thân" rows="5" cols="5">
+        </textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Nhập lại thông tin</button>
+        <button type="button"></button>
+
+    </form>
+
+</body>
+</html>

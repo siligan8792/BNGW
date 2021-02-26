@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>
+        <span id="min">10</span>:  <span id="sec">00</span>
+    </h2>
+    <script type="text/javascript">
+        var min = document.getElementById("min");
+        var sec = document.getElementById('sec');
+        var m = 10;
+        var s = 0;
+        var timer = setInterval(function (){
+            min.innerText = m>10?m:"0"+m;
+         /*  tuong duong
+            if (m<=10){
+                min.innerText=m;
+            }else{
+                min.innerText="0"+m;
+            }*/
+            sec.innerText = s>10?s:"0"+s;
+            s--;
+            if(s<0){
+                m--;
+                s=59;
+            }
+            if(m<0){
+                clearInterval(timer);
+                alert(".... Oẳng ....");
+            }
+        },10);
+
+    </script>
+</body>
+</html>
