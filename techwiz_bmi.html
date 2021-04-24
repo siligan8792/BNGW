@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+          type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93907e36a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/techwiz_bmi.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="display-4">BMI Calculator</h1>
+    <form>
+        <div class="form-group">
+            <label for="height">Height:</label>
+            <input type="number" id="height" class="form-control col-md-3" placeholder="Height (in cm)" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" class="form-control col-md-3" placeholder="Weight (in kg)" required>
+        </div>
+        <input type="submit" value="Calculate" class="btn btn-lg btn-danger" id="calBtn">
+    </form>
+    <div class="result pt-3">
+
+    </div>
+    <div class="info mt-4">
+        <h3 class='my-3'>BMI Categories</h3>
+        <table class="table table-primary table-bordered">
+            <tr>
+                <th>Underweight</th>
+                <td>&lt;18.5</td>
+            </tr>
+            <tr>
+                <th>Normal Weight</th>
+                <td>18.5 - 24.9</td>
+            </tr>
+            <tr>
+                <th>Overweight</th>
+                <td>25 - 29-9</td>
+            </tr>
+            <tr>
+                <th>Underweight</th>
+                <td>BMI of 30 or greater</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap&libraries=&v=weekly"
+        defer
+></script>
+<script type="text/javascript">
+    const calBtn = document.querySelector('#calBtn');
+    calBtn.addEventListener('click', function (){
+        event.preventDefault();
+        const height = document.getElementById('height').value
+        const weight = document.getElementById('weight').value
+        let bmi =(weight / (height ** 2))*10000;
+        document.querySelector('.result').innerHTML = bmi;
+    });
+</script>
+</body>
+</html>
